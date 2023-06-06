@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        width: 350px;
+        height: 350px;
+        border-radius: 5%;
+        display: flex;
+        overflow: auto;
+        scroll-snap-align: calc();
+      }
+      .container > .item {
+        min-width: 100%;
+        /* scroll-snap-align: start; */
+      }
+      .item:nth-child(1) {
+        background-color: rgb(10, 33, 133);
+      }
+      .item:nth-child(2) {
+        background-color: azure;
+      }
+      .item:nth-child(3) {
+        background-color: cadetblue;
+      }
+      .item {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+          fuga? Vitae at beatae iusto expedita qui pariatur assumenda? Optio
+          commodi eum veniam iusto labore perspiciatis quidem? Corporis tempore
+          quam delectus.
+        </p>
+      </div>
+      <div class="item"><p>2</p></div>
+      <div class="item"><p>3</p></div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        .card {
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrolling-wrapper">
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+      <div class="card"><h2>Card</h2></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-blue-500 to-blue-500">
+    <div class="flex justify-center my-20">
+      <div class="w-[300px]">
+        <img
+          class="w-[300px] h-[300px] rounded-xl shadow-xl"
+          src="https://media.tenor.com/gtCplcXtC58AAAAM/milk-mocha.gif"
+          alt=""
+        />
+        <h1 class="font-semibold text-xl py-10">Mau gak jadi pacar aku?</h1>
+        <button
+          class="px-8 py-3 bg-blue-200 rounded-md shadow-md text-xl mr-10 font-semibold"
+          type="button"
+          id="btn-mau"
+          onclick="alert('I love You')"
+        >
+          Mau
+        </button>
+        <button
+          class="px-8 py-3 bg-blue-200 rounded-md shadow-md absolute text-xl font-semibold"
+          id="btn-gakmau"
+          onclick="gamau(this)"
+        >
+          gak mu
+        </button>
+      </div>
+    </div>
+    <script>
+      function gamau(id) {
+        var mau = document.getElementById("btn-mau");
+        var i = Math.floor(Math.random() * 400) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+      }
+    </script>
+  </body>
+</html>
